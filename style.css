@@ -1,0 +1,122 @@
+ body {
+            margin: 0;
+            padding: 0;
+            /* background-image: url(solid-concrete-wall-textured-backdrop.jpg); */
+            background-size: 100% 100%;
+            background-attachment: smooth;
+            background-color: antiquewhite;
+
+        }
+
+        .head {
+            justify-self: center;
+            align-items: center;
+            text-align: center;
+            font-size: xx-large;
+            margin-left: 40%;
+            width: max-content;
+            background: linear-gradient(to right, rgb(109, 60, 165), rgb(106, 21, 203), rgb(8, 84, 238));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            /* font-size: 1vw */
+            /* text-decoration: ; */
+        }
+
+        .area textarea {
+
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            margin: auto;
+
+            /* background: linear-gradient(var(--angle), rgb(78, 71, 71), rgb(58, 58, 52), rgb(43, 40, 40),rgb(36, 36, 33), rgb(28, 28, 26), rgb(19, 18, 18), rgb(13, 13, 13),rgb(0, 0, 0), ); */
+            background: transparent;
+            background-repeat: no-repeat;
+            color: black;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: normal;
+            font-family: normal;
+            border: 4px solid;
+            --angle: 0deg;
+            border-image: linear-gradient(var(--angle), rgba(255, 0, 208, 0.761), 30%, rgb(255, 0, 38), 50%, rgb(64, 0, 255));
+            animation: 5s brd linear infinite;
+            border-image-slice: 1;
+            box-shadow: 10px;
+        }
+
+        .btns {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+
+            /* transition: ; */
+        }
+
+        .btns button,
+        .btns select {
+            background-color: blanchedalmond;
+            font-variant: small-caps;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            font-weight: 700;
+            background: rgba(249, 25, 29, 0.899);
+            background: linear-gradient(to right, rgb(177, 125, 237), 25%, rgb(8, 84, 238));
+            padding: 3px;
+            margin-left: .8em;
+            margin-bottom: 1.2em;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            border: 2px solid rgb(97, 153, 231);
+            border-radius: 20px;
+            display: inline-block;
+            transition: transform 1s linear;
+            transition-duration: .5s;
+
+        }
+
+        .btns button:hover {
+            color: black;
+            -webkit-text-fill-color: black;
+            background: linear-gradient(to right, rgb(109, 60, 165), 20%, rgb(8, 84, 238));
+            transform: translateY(-3px);
+
+        }
+
+        #op {
+            width: max-content;
+            /* justify-content: center; */
+            /* align-content: center; */
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 0;
+            margin-top: 20px;
+            margin-left: 40%;
+            font-size: 20px;
+            /* text-align: center; */
+            font-family: Arial;
+
+            /* background: linear-gradient(to right, rgb(241, 0, 0), 30%, rgb(213, 41, 185) 70%,rgb(96, 8, 238));
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text; */
+            color: rgb(203, 58, 219);
+            border: .1em solid;
+            --angle: 0deg;
+            border-image: linear-gradient(var(--angle), rgba(255, 0, 208, 0.761), 30%, rgb(255, 0, 38), 50%, rgb(64, 0, 255));
+            animation: 5s brd linear infinite;
+            border-image-slice: 1;
+
+        }
+
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+
+        @keyframes brd {
+            to {
+                --angle: 360deg;
+            }
+        }
