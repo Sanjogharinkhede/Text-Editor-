@@ -13,7 +13,7 @@
             align-items: center;
             text-align: center;
             font-size: xx-large;
-            margin-left: 40%;
+           /* margin-left: 40%;*/
             width: max-content;
             background: linear-gradient(to right, rgb(109, 60, 165), rgb(106, 21, 203), rgb(8, 84, 238));
             -webkit-text-fill-color: transparent;
